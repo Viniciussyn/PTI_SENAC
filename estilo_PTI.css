@@ -1,0 +1,258 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+
+.Boasvindas{
+    display: flex;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.indice-titulo{
+    display: flex;
+    justify-content: center;
+
+}
+
+.indice-titulo > li{
+    align-items: center;
+    list-style-type: none;
+    margin: 10px;
+}
+
+/* Links */
+
+a {
+  position: relative;
+  color: #5b8cff; /* azul moderno */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Efeito de linha embaixo animada */
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: #5b8cff;
+  transition: width 0.3s ease;
+}
+
+a:hover {
+  color: #8b5bff; /* muda cor no hover */
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+.imagem-tecnico{
+    width: 100px;
+    height: 100px;
+}
+
+
+.sobre-nos{
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-nos > p{
+    width: 25%;
+}
+
+.produtos > ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    height: 200px;
+}
+
+ul img{
+    width: 50px;
+    height: 50px;
+}
+
+.produtos > ul > li{
+    margin: 20px;
+}
+
+.imagem-produtos{
+    width: 150px;
+    height: 150px;
+}
+
+.vantagens-section{
+    display: flex;
+    justify-content: center;
+}
+
+.text_responsivo{
+    width: 50%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Formulário */
+
+.form-container {
+      background: #fff;
+      padding: 20px 30px;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 30px;
+      box-shadow: #222;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .form-container input, 
+    .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    .form-container input:focus, 
+    .form-container textarea:focus {
+      border-color: #007bff;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 12px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .form-container button:hover {
+      background: #0056b3;
+    }
+
+    /* Vantagens */
+
+    .vantagens-section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .vantagens-section h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .vantagens-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .vantagem-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .vantagem-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .vantagem-card span {
+      font-size: 40px;
+      display: block;
+      margin-bottom: 15px;
+      color: #007bff;
+    }
+
+    .vantagem-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .vantagem-card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* Card Swiper */
+
+    .swiper {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    position: relative;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagem-produtos {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+
+  .imagem-produtos:hover {
+    transform: scale(1.05);
+  }
+
+  /* Botões personalizados */
+  .swiper-button-prev, .swiper-button-next {
+    background: none;
+    width: 50px;
+    height: 50px;
+  }
+
+  .swiper-button-prev img,
+  .swiper-button-next img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .swiper-button-prev img {
+    transform: scaleX(-1); /* inverte a seta da esquerda */
+  }
